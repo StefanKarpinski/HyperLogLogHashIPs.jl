@@ -1,0 +1,9 @@
+name = "HyperLogLogHashIPs"
+uuid = "582e0c5b-0b19-41d9-8107-2ea590f2f72e"
+authors = ["Stefan Karpinski <stefan@karpinski.org>"]
+version = "0.1.0"
+
+[deps]
+Nettle = "49dea1ee-f6fa-5aa6-9a11-8816cee7d4b9"
+SHA = "ea8e919c-243c-51af-8825-aaa63cd721ce"
+Sockets = "6462fe0b-24de-5631-8697-dd941f90decc"
