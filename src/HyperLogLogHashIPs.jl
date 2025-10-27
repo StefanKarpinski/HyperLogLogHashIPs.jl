@@ -60,6 +60,7 @@ const bucket_mask = 0x0000_0fff # 12 bits
 const sample_mask = ~bucket_mask << ignore_bits # 18 bits
 const sample_shift = trailing_ones(bucket_mask)
 
+@assert count_ones(bucket_mask & sample_mask) == 0
 @assert count_ones(bucket_mask | sample_mask) == 30
 
 function hyper_log_log!(key::Vector{UInt8}, data::Vector{UInt8})
